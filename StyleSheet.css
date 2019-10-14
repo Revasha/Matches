@@ -1,0 +1,103 @@
+﻿
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Courier New, Courier, sans-serif;
+}
+.landing-page{
+    width:100%;
+    height:100vh;
+    background:#000;
+    position:relative;
+    overflow:hidden;
+}
+
+    .landing-page::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: url(https://upload.wikimedia.org/wikipedia/commons/0/06/%D0%93%D0%BB%D0%B0%D0%B2%D0%BD%D1%8B%D0%B9_%D0%BA%D0%BE%D1%80%D0%BF%D1%83%D1%81_%D0%9A%D0%BE%D1%81%D1%82%D1%80%D0%BE%D0%BC%D1%81%D0%BA%D0%BE%D0%B3%D0%BE_%D0%B3%D0%BE%D1%81%D1%83%D0%B4%D0%B0%D1%80%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D0%BE%D0%B3%D0%BE_%D1%82%D0%B5%D1%85%D0%BD%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%BE%D0%B3%D0%BE_%D1%83%D0%BD%D0%B8%D0%B2%D0%B5%D1%80%D1%81%D0%B8%D1%82%D0%B5%D1%82%D0%B0.jpg) no-repeat;
+        background-size:cover;
+        opacity: .3;
+        animation: anim 25s linear infinite;
+
+    }
+
+    @keyframes anim{
+        50%{
+            transform:scale(2);
+        }
+        100%{
+            transform:scale(1);
+        }
+    }
+
+    .page-content{
+        position:absolute;
+        top:50%;
+        left:50%;
+        transform:translate(-50%,-50%);
+        z-index:1;
+        width:100%;
+        max-width:800px;
+        text-align:center;
+        padding: 0 40px;
+        box-sizing:border-box;
+    }
+
+        .page-content h1 {
+            color: #ffdc87;
+            text-transform: uppercase;
+            font-size: 35px;
+            font-weight: 900;
+            margin-bottom: 20px;
+        }
+
+        .page-content p{
+            color:#fff;
+            margin-bottom:20px;
+            font-weight:700;
+        }
+
+        .page-content a {
+            display: inline-block;
+            text-decoration: none;
+            color: #ffdc87;
+            border: 2px solid #ffdc87;
+            text-transform: uppercase;
+            padding: 10px 20px;
+            transition: 0.4s linear;
+            font-weight:900;
+        }
+
+            .page-content a:hover {
+                color: #fff;
+                background: #ffdc87;
+            }
+.text {
+    z-index: 2;
+    padding: 10px;
+    text-align: justify;
+    background: #ffdc87;
+}
+        .text div{  
+            margin-bottom:6px;
+        }
+
+    .description {
+        font-weight:900;
+    }
+
+        .name{
+            margin-top:20px;
+            float:left;
+   
+        }
+.text img {
+    width: 75vh;
+    height: 90vh;
+    border-radius:10px;
+}
