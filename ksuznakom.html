@@ -1,0 +1,107 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Сайт знакомств КГУ</title>
+    <link rel="stylesheet" href="StyleSheet1.css" />
+    <link href="https://fonts.googleapis.com/css?family=Hind&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" charset="utf-8"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+</head>
+<body>
+    <div class="landing-page">
+        <div class="page-content">
+            <h1>Добро пожаловать на сайт знакомств</h1>
+            <p>Здесь самые лучшие пацаны на свете и девчонки тоже есть</p>
+            <p !important style="font-weight:200; transform:translateY(-100%); margin-bottom:-10px">(пишите мне в директ)</p>
+            <p>English text here, I think it quiet a little bit interesting</p>
+            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Размести свою анкету/post your profile</a>
+        </div>
+    </div>
+
+    <div class="students-section">
+        <div class="inner-width">
+            <h2>Самые лучшие парни бибо</h2>
+            <div class="students-pics">
+                <img src="https://sun9-10.userapi.com/c858336/v858336833/ad4be/4sGd0fa59nk.jpg" alt="test-1" class="active"/>
+                <img src="https://sun9-10.userapi.com/c858336/v858336833/ad4be/4sGd0fa59nk.jpg" alt="test-2" />
+                <img src="https://sun9-10.userapi.com/c858336/v858336833/ad4be/4sGd0fa59nk.jpg" alt="test-3" />
+                <img src="https://sun9-10.userapi.com/c858336/v858336833/ad4be/4sGd0fa59nk.jpg" alt="test-4" />
+            </div>
+            <div class="students-content">
+                <div class="students active" id="test-1">
+                    <p>Андрюха Скрябин зашибись мужик, жалко, что учится на целевом. Так бы с ним хоть кто-то дружил. Ну и прочее, сами знаете. Почему я с него начал? А хрен его знает, ладно, у меня дальше сраные span`ы</p>
+                    <span class="description">Андрей Скрябин / 140 баллов ЕГЭ</span>
+                </div>
+
+                <div class="students" id="test-2">
+                    <p>Андрюха Скрябин зашибись мужик, жалко, что учится на целевом. Так бы с ним хоть кто-то дружил. Ну и прочее, сами знаете. Почему я с него начал? А хрен его знает, ладно, у меня дальше сраные span`ы</p>
+                    <span class="description">Тимофей Цветков / 237 баллов ЕГЭ</span>
+                </div>
+
+                <div class="students" id="test-3">
+                    <p>Андрюха Скрябин зашибись мужик, жалко, что учится на целевом. Так бы с ним хоть кто-то дружил. Ну и прочее, сами знаете. Почему я с него начал? А хрен его знает, ладно, у меня дальше сраные span`ы</p>
+                    <span class="description">Какой-то хрен / 140 баллов ЕГЭ</span>
+                </div>
+
+                <div class="students" id="test-4">
+                    <p>Андрюха Скрябин зашибись мужик, жалко, что учится на целевом. Так бы с ним хоть кто-то дружил. Ну и прочее, сами знаете. Почему я с него начал? А хрен его знает, ладно, у меня дальше сраные span`ы</p>
+                    <span class="description">Ну и ладно / 140 баллов ЕГЭ</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        $('.students-pics img').click(function () {
+            $(".students-pics img").removeClass("active");
+            $(this).addClass("active");
+
+            $(".students").removeClass("active");
+            $("#" + $(this).attr("alt")).addClass("active");
+        });
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+    <!--<div class="text">
+        <div class="name">
+            <h2> Скрябин Андрей</h2>
+            <img src="https://sun9-10.userapi.com/c858336/v858336833/ad4be/4sGd0fa59nk.jpg" />
+            <p>
+                СКРЕБОК ПАЖИЛОЙ ХРЕНАСОС СЛЮБЛЮ АНАСОС А КАВООО??? ДОБРО ПОЖАЛОВАТЬ НА САЙТ ЗНАКОМСТВ
+                Здесь самые лучшие пацаны на свете и девчонки тоже есть
+
+                (пишите мне в директ)
+
+                English text here, I think it quiet a little bit interesting
+
+                РАЗМЕСТИ СВОЮ АНКЕТУ/POST YOUR PROFILE
+            </p>
+            <div class="name">
+            <h2>Скрябин Андрей</h2>
+            <img src="https://sun9-10.userapi.com/c858336/v858336833/ad4be/4sGd0fa59nk.jpg" />
+            <p>
+                СКРЕБОК ПАЖИЛОЙ ХРЕНАСОС СЛЮБЛЮ АНАСОС А КАВООО??? ДОБРО ПОЖАЛОВАТЬ НА САЙТ ЗНАКОМСТВ
+                Здесь самые лучшие пацаны на свете и девчонки тоже есть
+
+                (пишите мне в директ)
+
+                English text here, I think it quiet a little bit interesting
+
+                РАЗМЕСТИ СВОЮ АНКЕТУ/POST YOUR PROFILE
+            </p>
+                </div>
+        </div>
+    </div>-->
+</body>
+</html>
